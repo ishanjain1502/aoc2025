@@ -16,10 +16,6 @@ for (const line of lines) {
 		else pos = ((pos - (dist || 0)) % 100 + 100) % 100;
 		continue;
 	}
-
-	// Compute first click (k>=1) where the dial hits 0 during this rotation.
-	// For R (increasing): need k such that (pos + k) % 100 === 0 -> k ≡ (100-pos) mod 100
-	// For L (decreasing): need k such that (pos - k) % 100 === 0 -> k ≡ pos mod 100
 	let first_k = 0;
 	if (dir === 'R') first_k = (100 - pos) % 100;
 	else first_k = pos % 100;

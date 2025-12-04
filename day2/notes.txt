@@ -1,0 +1,13 @@
+- Read all the ranges from the input file (like 11-22, 95-115, etc).
+- For each possible number that is made by repeating a sequence of digits exactly two times (like 55, 6464, 123123), check if it falls inside any of the given ranges.
+- If it does, add it to the total sum.
+- At the end, print the total sum of all such numbers.
+
+
+
+Approach for part2.js (Second Problem):
+
+- Read all the ranges from the input file.
+- For each possible number that is made by repeating a sequence of digits two or more times (like 1212, 123123123, 1111111), check if it falls inside any of the given ranges.
+- If it does, add it to the total sum.
+- At the end, print the total sum of all such numbers.

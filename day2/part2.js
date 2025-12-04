@@ -28,9 +28,7 @@ for (let m = 1; m < maxDigits; m++) {
     for (let t = start; t <= end; t++) {
       const block = t.toString();
       const s = block.repeat(k);
-      // skip if overall length doesn't match expected (safety)
       if (s.length !== totalLen) continue;
-      // Leading zero check: block start guarantees no leading zeros; overall number won't start with 0
       const n = BigInt(s);
       // Check if n falls into any range
       for (const [lo, hi] of ranges) {
